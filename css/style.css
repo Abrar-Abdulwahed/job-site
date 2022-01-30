@@ -1,0 +1,174 @@
+:root {
+    --primary-clr: #fb246a;
+    --status-primary-clr: #be0845;
+    --box-shadow-status-primary-clr: #be084546;
+    --dark-status-primary-clr: #be0845;
+    --border-active-primary-clr: #cc084a;
+    --box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    --fs-12px: 12px;
+}
+
+.btn-primary {
+    background-color: var(--primary-clr);
+    border-color: var(--primary-clr);
+}
+
+.btn-outline-primary {
+    color: var(--primary-clr);
+    border-color: var(--primary-clr);
+}
+
+.btn-check:checked+.btn-primary, .btn-check:active+.btn-primary, .btn-primary:active, .btn-primary.active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: var(--status-primary-clr);
+    border-color: var(--primary-clr);
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color: #fff;
+    background-color: var(--dark-status-primary-clr);
+    border-color: var(--status-primary-clr);
+    box-shadow: 0 0 0 0.25rem var(--box-shadow-status-primary-clr);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--dark-status-primary-clr);
+    border-color: var(--status-primary-clr);
+}
+
+.btn-check:checked+.btn-outline-primary, .btn-check:active+.btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
+    color: #fff;
+    background-color: var(--dark-status-primary-clr);
+    border-color: var(--status-primary-clr);
+}
+
+.btn-check:checked+.btn-outline-primary:focus, .btn-check:active+.btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
+    box-shadow: 0 0 0 0.25rem var(--box-shadow-status-primary-clr);
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color: var(--primary-clr);
+    border-color: var(--primary-clr);
+}
+
+.btn-check:focus+.btn-outline-primary, .btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.25rem var(--box-shadow-status-primary-clr);
+}
+
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--box-shadow-status-primary-clr);
+}
+
+.btn-check:checked+.btn-primary:focus, .btn-check:active+.btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem var(--box-shadow-status-primary-clr);
+}
+
+.navbar-light .navbar-toggler {
+    color: var(--box-shadow-status-primary-clr);
+    border-color: #be084546;
+}
+
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem;
+}
+
+/*=========== Wrapper ===========*/
+
+.ads {
+    padding: 0 1rem;
+}
+
+.ads .card {
+    border: none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+
+.ads .card:hover {
+    box-shadow: 0 0 50px #fb246cd8;
+    transform: translateY(-6px) rotate(3deg) scale(1.040);
+}
+
+.btn-outline-dark {
+    border-radius: 35px;
+    font-size: 10px;
+    box-shadow: none
+}
+
+.recent-jobs .card {
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+}
+
+.recent-jobs .card-img {
+    height: 200px;
+    min-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-color: inherit;
+    position: relative;
+}
+
+.recent-jobs .card-img::after {
+    position: absolute;
+    content: '';
+    top: 161px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top-width: 40px;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 545px;
+    border-left-width: calc(575px - 5vw);
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: inherit;
+}
+
+.recent-jobs .card-custom-avatar img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    position: absolute;
+    top: 100px;
+    left: 1.25rem;
+    width: 100px;
+    height: 100px;
+}
+
+.recent-jobs .card-footer {
+    background: inherit;
+    border-color: inherit;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.recent-jobs .fs-12px {
+    font-size: 12px;
+}
+
+.partner {
+    padding: 2rem 0;
+    box-shadow: var(--box-shadow);
+}
+
+.partner:hover {
+    box-shadow: none;
+}
+
+.partner .carousel-indicators {
+    position: inherit;
+}
+
+.partner .carousel-indicators button {
+    background-color: var(--primary-clr);
+    width: .5rem;
+    height: .5rem;
+    border-radius: 100%;
+}
