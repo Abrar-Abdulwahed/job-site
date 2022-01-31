@@ -1,300 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sign up</title>
-        <link rel="stylesheet" href="../css/bootstrap.css">
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
-    <body>
-        <section class="ftco-section" style="padding: 7em 0;">
-            <style>
-                .img {
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center center; }
-                    img, .login-wrap {
-                    width: 50%; }
-                    @media (max-width: 991.98px) {
-                        .img, .login-wrap {
-                        width: 100%; } }
-
-                    @media (max-width: 767.98px) {
-                    .wrap .img {
-                        height: 250px; } }
-
-                    .login-wrap {
-                    position: relative;
-                    background: #fff; }
-                    .social-media .social-icon {
-                        display: block;
-                        width: 40px;
-                        height: 40px;
-                        background: transparent;
-                        border: 1px solid rgba(0, 0, 0, 0.05);
-                        font-size: 16px;
-                        margin-right: 5px;
-                        border-radius: 50%; }
-                        .social-media .social-icon span {
-                        color: #999999; }
-                        .social-media .social-icon:hover, .social-media .social-icon:focus {
-                        background: #e3b04b; }
-                        .social-media .social-icon:hover span, .social-media .social-icon:focus span {
-                            color: #fff; }
-
-            </style>
-            <div class="container register">
-                <div class="row justify-content-center">
-                    <div class="col-md-6 text-center mb-5">
-                        <h2 class="heading-section" style="font-size: 28px; color: #000;">Login</h2>
-                    </div>
-                </div>
-                <div class="row justify-content-center ">
-                    <div class="col-md-5">
-                        <img class="img-fluid w-100" src="../imgs/pink-texture.jpg" height="100%">
-                    </div>
-                    <div class="col-md-7">
-                        <div class="login-wrap p-4 p-md-5">
-                            <div class="d-flex">
-                                <div class="w-100">
-                                    <h3 class="mb-4">Sign In</h3>
-                                </div>
-                                <div class="w-100">
-                                    <p class="social-media d-flex justify-content-end">
-                                        <a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a>
-                                        <a href="#" class="social-icon d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a>
-                                    </p>
-                                </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../css/bootstrap.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+	</head>
+	<body>
+		<div class="login-form mt-5">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-sm-12 col-lg-10 form-container">
+                        <div class="row gx-3 align-items-center">
+                            <div class="col-sm-12 col-md-6 text-uppercase left-content">
+                                <img src="../imgs/login.svg" alt="" width="100%">
                             </div>
-                            <div class="col-md-9 register-right">
-                                <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                                    <li class="nav-item">
-                                        <a
-                                            class="nav-link active"
-                                            id="home-tab"
-                                            data-toggle="tab"
-                                            href="#home"
-                                            role="tab"
-                                            aria-controls="home"
-                                            aria-selected="true"
-                                        >Employee</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a
-                                            class="nav-link"
-                                            id="profile-tab"
-                                            data-toggle="tab"
-                                            href="#profile"
-                                            role="tab"
-                                            aria-controls="profile"
-                                            aria-selected="false"
-                                        >Hirer</a>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div
-                                        class="tab-pane fade show active"
-                                        id="home"
-                                        role="tabpanel"
-                                        aria-labelledby="home-tab"
-                                    >
-                                        <h3 class="register-heading">Apply as a Employee</h3>
-                                        <div class="row register-form">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        placeholder="First Name *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <div class="form-group">
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        placeholder="Last Name *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <div class="form-group">
-                                                    <input
-                                                        type="password"
-                                                        class="form-control"
-                                                        placeholder="Password *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <div class="form-group">
-                                                    <input
-                                                        type="password"
-                                                        class="form-control"
-                                                        placeholder="Confirm Password *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="maxl">
-                                                        <label class="radio inline">
-                                                            <input
-                                                                type="radio"
-                                                                name="gender"
-                                                                value="male"
-                                                                checked
-                                                            >
-                                                            <span> Male</span>
-                                                        </label>
-                                                        <label class="radio inline">
-                                                            <input type="radio" name="gender" value="female">
-                                                            <span>Female</span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input
-                                                        type="email"
-                                                        class="form-control"
-                                                        placeholder="Your Email *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <div class="form-group">
-                                                    <input
-                                                        type="text"
-                                                        minlength="10"
-                                                        maxlength="10"
-                                                        name="txtEmpPhone"
-                                                        class="form-control"
-                                                        placeholder="Your Phone *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <div class="form-group">
-                                                    <select class="form-control">
-                                                        <option class="hidden" selected disabled>Please select your Sequrity Question</option>
-                                                        <option>What is your Birthdate?</option>
-                                                        <option>What is Your old Phone Number</option>
-                                                        <option>What is your Pet Name?</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        placeholder="Enter Your Answer *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <input type="submit" class="btnRegister" value="Register">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="tab-pane fade show"
-                                        id="profile"
-                                        role="tabpanel"
-                                        aria-labelledby="profile-tab"
-                                    >
-                                        <h3 class="register-heading">Apply as a Hirer</h3>
-                                        <div class="row register-form">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        placeholder="First Name *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <div class="form-group">
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        placeholder="Last Name *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <div class="form-group">
-                                                    <input
-                                                        type="email"
-                                                        class="form-control"
-                                                        placeholder="Email *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <div class="form-group">
-                                                    <input
-                                                        type="text"
-                                                        maxlength="10"
-                                                        minlength="10"
-                                                        class="form-control"
-                                                        placeholder="Phone *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input
-                                                        type="password"
-                                                        class="form-control"
-                                                        placeholder="Password *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <div class="form-group">
-                                                    <input
-                                                        type="password"
-                                                        class="form-control"
-                                                        placeholder="Confirm Password *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <div class="form-group">
-                                                    <select class="form-control">
-                                                        <option class="hidden" selected disabled>Please select your Sequrity Question</option>
-                                                        <option>What is your Birthdate?</option>
-                                                        <option>What is Your old Phone Number</option>
-                                                        <option>What is your Pet Name?</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input
-                                                        type="text"
-                                                        class="form-control"
-                                                        placeholder="`Answer *"
-                                                        value=""
-                                                    >
-                                                </div>
-                                                <input type="submit" class="btnRegister" value="Register">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-sm-12 col-md-6 right-content text-start py-4 px-5">
+                                <h3 class="form-title mb-5 text-uppercase pb-2">Login</h3>
+								<form class="form-content text-dark mb-3">
+									<div class="mb-3">
+										<label for="username_or_email">Username / Email</label>
+										<input type="email" id="username_or_email" class="form-control border-0 rounded-pill h-40" />
+									</div>
+									<div class="mb-5">
+										<label for="psw">Password</label>
+										<input type="password" id="psw" class="form-control border-0 rounded-pill h-40" />
+									</div>
+									<button class="btn w-100 rounded-pill text-light mb-3 h-40">Login</button>
+									<div class="remember-forget d-flex justify-content-between align-items-baseline">
+										<div class="remember-me">
+											<input type="checkbox" class="checkbox" />
+											<label class="check-label">Remember Me</label>
+										</div>
+										<a href="" class="forgot">Forgot Password</a>
+									</div>
+								</form>
+								<span class="d-block text-center mb-3 fw-bolder">OR</span>
+								<ul class="social-links d-flex justify-content-center">
+									<li>
+										<a href="#" class="btn text-white" style="background-color: #F16262;"><i class="fab fa-google"></i> Login with Google</a>
+									</li>
+									<li class="mx-1">
+										<a href="#" class="btn text-white" style="background-color: #3B5897;"><i class="fab fa-facebook-f"></i> Login with Facebook</a>
+									</li>
+								</ul>
+								<span class="d-block text-center mt-4">Don't have an account? Sign up <a href="#" class="text-primary">here</a></span>
                             </div>
-                            <p class="text-center">Not a member? <a data-toggle="tab" href="#signup">Sign Up</a></p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="container register">
-            <div class="row">
-                <div class="col-md-3 register-left">
-                    <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="">
-                    <h3>Welcome</h3>
-                    <p>You are 30 seconds away from earning your own money!</p>
-                    <input type="submit" name="" value="Login">
-                    <br>
-                </div>
-
-            </div>
-        </div>
-        <script src="../js/bootstrap.js"></script>
-        <script src="../js/app.js"></script>
-    </body>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/bootstrap.js"></script>
+		<script src="../js/app.js"></script>
+	</body>
 </html>
