@@ -348,6 +348,7 @@ ul {
 /*=========== Dashboard ============*/
 .dashboard .aside {
     background-color: rgba(0, 0, 0, 0.03);
+    /* position: fixed; */
 }
 
 .personal-information .card-header {
@@ -363,4 +364,388 @@ ul {
     color: inherit;
     background-color: transparent;
     box-shadow: none;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+
+.dashboard .modal-dialog .modal-dialog .title h3 {
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 25px;
+    color: #3C4858;
+}
+
+.dashboard .modal-dialog .modal-dialog .btn {
+    position: relative;
+    padding: 12px 30px !important;
+    margin: 5px 1px !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.dashboard .modal-dialog .btn.btn-primary {
+    color: #fff !important;
+    box-shadow: var(--box-shadow);
+}
+
+.dashboard .modal-dialog .btn.btn-primary:hover {
+    box-shadow: var(--box-shadow);
+}
+
+.dashboard .modal-dialog .btn.btn-primary:active {
+    box-shadow: var(--box-shadow) !important;
+}
+
+.dashboard .modal-dialog .btn.btn-link {
+    background-color: transparent;
+    color: #999999;
+    box-shadow: none;
+    font-size: 14px !important;
+}
+
+.dashboard .modal-dialog .btn.btn-link:hover {
+    background-color: transparent;
+    color: #999999;
+    text-decoration: none;
+}
+
+.dashboard .modal-dialog .btn.btn-danger.btn-link {
+    background-color: transparent;
+    color: #f44336;
+    box-shadow: none;
+}
+
+.dashboard .modal-dialog .btn.btn-primary.btn-link {
+    background-color: transparent !important;
+    color: var(--primary-clr) !important;
+}
+
+.dashboard .modal-dialog .btn.btn-primary.btn-link:hover {
+    background-color: transparent !important;
+    color: var(--primary-clr) !important;
+    box-shadow: none;
+}
+
+.dashboard .modal-dialog .btn.btn-primary.btn-link:active {
+    background-color: transparent !important;
+    color: var(--primary-clr) !important;
+    box-shadow: none !important;
+}
+
+.dashboard .modal-dialog .btn.btn-info {
+    color: #fff !important;
+    background-color: #00bcd4 !important;
+    border-color: #00bcd4;
+    box-shadow: 0 2px 2px 0 rgba(0, 188, 212, .14), 0 3px 1px -2px rgba(0, 188, 212, .2), 0 1px 5px 0 rgba(0, 188, 212, .12);
+}
+
+.dashboard .modal-dialog .btn.btn-info.focus {
+    color: #fff;
+    background-color: var(--primary-clr);
+    border-color: var(--primary-clr);
+}
+
+.dashboard .modal-dialog .btn.btn-info:focus {
+    color: #fff;
+    background-color: #00aec5;
+    border-color: #008697;
+    box-shadow: 0 14px 26px -12px rgba(0, 188, 212, .42),
+        0 4px 23px 0 rgba(0, 0, 0, .12),
+        0 8px 10px -5px rgba(0, 188, 212, .2);
+}
+
+.dashboard .modal-dialog .btn.btn-info:hover {
+    color: #fff;
+    background-color: #00aec5;
+    border-color: #008697;
+    box-shadow: 0 14px 26px -12px rgba(0, 188, 212, .42),
+        0 4px 23px 0 rgba(0, 0, 0, .12),
+        0 8px 10px -5px rgba(0, 188, 212, .2);
+}
+
+.dashboard .modal-dialog .btn-block {
+    display: block;
+    width: 100%;
+}
+
+.dashboard .modal-dialog .btn .material-icons {
+    position: relative;
+    display: inline-block;
+    top: 0;
+    margin-top: -1em;
+    margin-bottom: -1em;
+    font-size: 1.1rem;
+    vertical-align: middle;
+}
+
+.dashboard .modal-dialog .btn.btn-just-icon {
+    font-size: 24px !important;
+    height: 41px;
+    min-width: 41px;
+    width: 41px;
+    padding: 0 !important;
+    overflow: hidden;
+    position: relative;
+    line-height: 41px;
+}
+
+.dashboard .modal-dialog .btn.btn-just-icon .fa {
+    color: #fff;
+    margin-top: 0;
+    position: absolute;
+    width: 100%;
+    transform: none;
+    left: 0;
+    top: 0;
+    height: 100%;
+    line-height: 41px;
+    font-size: 20px;
+}
+
+.dashboard .modal-dialog .btn.btn-lg {
+    padding: 18px !important;
+}
+
+.dashboard .modal-dialog .btn.btn-round {
+    border-radius: 30px;
+}
+
+.dashboard .modal-dialog .modal-dialog .modal-content {
+    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+    border-radius: 6px;
+    border: none;
+}
+
+.dashboard .modal-dialog .modal-dialog .modal-header {
+    border-bottom: none;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 0;
+    padding-left: 24px;
+}
+
+.dashboard .modal-dialog .modal-dialog .modal-header .modal-title {
+    font-size: 17px;
+    font-weight: 300;
+    color: #3C4858;
+    margin-bottom: 0;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.dashboard .modal-dialog .modal-dialog .modal-body {
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    color: #3C4858;
+}
+
+.dashboard .modal-dialog .modal .modal-header .close i {
+    font-size: 16px;
+    color: #999;
+}
+
+.dashboard .modal-dialog .modal-dialog .modal-footer {
+    border-top: none;
+    padding: 24px !important;
+}
+
+.dashboard .modal-dialog .modal-dialog .modal-body+.modal-footer {
+    padding-top: 0 !important;
+}
+
+.dashboard .modal-dialog .modal-dialog .modal-footer button {
+    margin: 0 !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    width: auto;
+}
+
+.dashboard .modal-dialog footer {
+    margin-top: 200px;
+    color: #555;
+    background: #fff;
+    padding: 25px;
+    font-weight: 300;
+
+}
+
+.dashboard .modal-dialog .footer p {
+    margin-bottom: 0;
+}
+
+.dashboard .modal-dialog footer p a {
+    color: #555;
+    font-weight: 400;
+}
+
+.dashboard .modal-dialog footer p a:hover {
+    color: #9f26aa;
+    text-decoration: none;
+}
+
+.dashboard .modal-dialog .modal-login {
+    max-width: 360px !important;
+    margin-top: 130px;
+}
+
+.dashboard .modal-dialog .modal-dialog .modal-content .card-signup .modal-header {
+    padding-top: 0;
+}
+
+.dashboard .modal-dialog .modal-login .modal-header .card-header {
+    width: 100%;
+}
+
+.dashboard .modal-dialog .modal-login .modal-header .close {
+    color: #fff;
+    top: -25px;
+    right: 50px;
+    text-shadow: none;
+    position: absolute;
+}
+
+.dashboard .modal-dialog .modal-login .modal-header .close i {
+    color: #fff;
+
+}
+
+.dashboard .modal-dialog .modal-login .modal-body {
+    padding-left: 4px !important;
+}
+
+.dashboard .modal-dialog .modal-login .modal-footer {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+.dashboard .modal-dialog .modal-login .modal-body {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+.dashboard .modal-dialog .card .card-title {
+    color: #fff;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    font-family: Roboto Slab, Times New Roman, serif;
+    margin-top: 10px;
+}
+
+.dashboard .modal-dialog .card .card-header {
+    border-radius: 3px !important;
+    padding: 1rem 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border: 0;
+}
+
+.dashboard .modal-dialog .card .card-header-primary {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px var(--primary-clr);
+    background: linear-gradient(60deg, var(--primary-clr), var(--primary-opacity-clr));
+}
+
+.dashboard .modal-dialog .card-plain .card-body {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.dashboard .modal-dialog .card .card-body {
+    padding: 15px;
+}
+
+.dashboard .modal-dialog .card form {
+    margin: 0;
+}
+
+.dashboard .modal-dialog .form-group {
+    margin-bottom: 17px !important;
+    position: relative;
+}
+
+.dashboard .modal-dialog .bmd-form-group {
+    position: relative;
+    padding-top: 27px !important;
+}
+
+.dashboard .modal-dialog .input-group-prepend {
+    margin-right: -1px;
+}
+
+.dashboard .modal-dialog .input-group .input-group-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.dashboard .modal-dialog .form-control::placeholder {
+    color: #aaaaaa !important;
+    font-size: 14px !important;
+}
+
+.dashboard .modal-dialog .form-control, .is-focused .form-control {
+    background-image: linear-gradient(0deg, #9c27b0 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #d2d2d2 1px, hsla(0, 0%, 82%, 0) 0) !important;
+}
+
+.dashboard .modal-dialog .form-control:focus {
+    box-shadow: none !important;
+}
+
+.dashboard .modal-dialog .modal-dialog .modal-body {
+    padding: 24px 24px 16px;
+}
+
+.dashboard .modal-dialog .modal-dialog .modal-footer button {
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: auto;
+}
+
+.dashboard .modal-dialog .modal-notice .instruction {
+    margin-bottom: 25px;
+}
+
+.dashboard .modal-dialog .modal-notice .picture {
+    height: 87px !important;
+    width: 131px !important;
+}
+
+.dashboard .modal-dialog img.rounded {
+    border-radius: 6px !important;
+}
+
+.dashboard .modal-dialog .img-fluid {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.dashboard .modal-dialog strong {
+    font-weight: 400 !important;
+}
+
+.dashboard .modal-dialog a {
+    color: #3e3947 !important;
+    text-decoration: none;
+}
+
+.dashboard .modal-dialog a:hover {
+    color: #89229b !important;
+    text-decoration: none !important;
 }
