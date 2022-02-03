@@ -526,6 +526,27 @@ ul {
     font-size: 13px;
 }
 
+/*=========== Job Details ===========*/
+/*=========== Services ===========*/
+.service-section .single-category {
+    padding: 30px 16px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.service-section .single-category img {
+    margin-bottom: 20px;
+}
+
+.service-section img {
+    vertical-align: middle;
+    border-style: none;
+}
+
 /*=========== Jobs ==============*/
 .jobs-section {
     user-select: none;
