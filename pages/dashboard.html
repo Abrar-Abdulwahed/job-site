@@ -10,367 +10,490 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="dashboard container-fluid">
-        <div class="row">
-            <div class="col-sm-5 col-md-2 aside">
-                <div class="row bg-opacity-10">
-                    <div class="col-12 p-0 px-3 py-3">
-                        <div class="d-flex flex-column align-items-center"> 
-                            <div class="border-2"></div><img class="photo" src="../imgs/github.png" alt="" width="100%">
-                            <p class="fw-bold h4 mt-3">Khorasani Abrar</p>
-                            <p class="text-muted">Full Stack Developer, YEM</p>
-                            <ul class="d-flex justify-content-between align-items-center">
-                                <li>
-                                    <a href="https://www.facebook.com/abrar.alkhorasani"><span class="fab fa-facebook-f me-2"></span></a>
-                                </li>
-                                <li>
-                                    <a href="tel:+967736565337"><span class="fab fa-whatsapp me-2"></span></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/Abrar-Abdulwahed/"><span class="fab fa-github-alt me-2"></span></a>
-                                </li>
-                            </ul>
-                            <ul class="nav nav-tabs flex-column w-100 bg-transparent" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                  <button class="nav-link w-100 text-dark active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-home me-2"></i>Home</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                  <button class="nav-link w-100 text-dark" id="skill-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="skill" aria-selected="false"><i class="fab fa-accusoft me-2"></i> Skills</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link w-100 text-dark" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fab fa-accusoft me-2"></i> Experience</button>
-                                  </li>
-                                <li class="nav-item" role="presentation">
-                                  <button class="nav-link w-100 text-dark" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-phone-square-alt me-2"></i> Qualification</button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link w-100 text-dark" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-phone-square-alt me-2"></i> Courses</button>
-                                  </li>
-                              </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 p-0 px-2 pb-3 mb-3">
-                        <div class="accordion" id="accordionPanelsStayOpenExample">
-                            <div class="accordion-item border-0 bg-transparent">
-                              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" >
-                                  Personal Information
-                                </button>
-                              </h2>
-                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                                    <div class="accordion-body">
-                                        
-                                    </div>
-                              </div>
-                            </div>
-                        </div>
+    <div class="dashboard">
+        <div class="wrapper hover_collapse">
+            <div class="top_navbar">
+                <div class="logo text-dark">KHO</div>
+                <div class="menu"> 
+                    <div class="hamburger">
+                    <i class="fas fa-bars text-dark"></i>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 ps-md-4">
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="card shadow mb-4 personal-information rounded-0">
-                            <div class="d-flex justify-content-between card-header py-3 rounded-0">
-                                <h6 class="m-0 font-weight-bold text-white text-center">Personal Information</h6>
-                                <span class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#personalInformationModal">
-                                    <i class="fas fa-edit text-white"></i>
-                                </span>
-                                <div class="modal fade" id="personalInformationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">          
-                                    <div class="modal-dialog modal-login mt-5" role="document">
-                                        <div class="modal-content">
-                                            <div class="card card-signup card-plain">
-                                                <div class="modal-header">
-                                                    <div class="card-header card-header-primary text-center">
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
-                                                        <h4 class="card-title">Edit Personal Information</h4>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form class="form" method="" action="">
-                                                        <div class="card-body">
-                                                            <div class="form-group bmd-form-group">
-                                                                <div class="input-group">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text">
-                                                                        <i class="fa fa-facebook-square"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <input type="text" class="form-control" placeholder="First Name...">
+            <div class="container-fluid ps-0">
+                <div class="row justify-content-between">
+                    <div class="col-sm-12 col-md-5 col-lg-3">
+                        <div class="sidebar">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="profile d-flex justify-content-center align-items-center position-relative">
+                                            <img src="../imgs/github.png" alt="" class="img-fluid rounded-circle" alt="" width="50%">
+                                            <button class="cursor-pointer rounded-circle shadow position-absolute" data-bs-toggle="modal" data-bs-target="#changeProfileModal">
+                                                <i class="fa fa-camera text-dark fa-2x"></i>
+                                            </button>
+                                            <div class="modal fade" id="changeProfileModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">          
+                                                <div class="modal-dialog modal-login mt-5" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="card card-signup card-plain">
+                                                            <div class="modal-header">
+                                                                <div class="card-header card-header-primary text-center">
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+                                                                    <h4 class="card-title">Edit Personal Information</h4>
                                                                 </div>
                                                             </div>
-                                
-                                                            <div class="form-group bmd-form-group">
-                                                                <div class="input-group">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text">
-                                                                        <span class="fab fa-github-alt me-2"></span>
-                                                                    </span>
-                                                                </div>
-                                                                    <input type="text" class="form-control" placeholder="Email...">
-                                                                </div>
-                                                            </div>
-                                
-                                                            <div class="form-group bmd-form-group">
-                                                                <div class="input-group">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text">
-                                                                        <span class="fab fa-whatsapp me-2"></span>
-                                                                    </span>
-                                                                </div>
-                                                                <input type="password" placeholder="Password..." class="form-control">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group bmd-form-group">
-                                                                <div class="input-group">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text">
-                                                                        <i class="fas fa-user-alt"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <input type="text" placeholder="Full Name.." class="form-control">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group bmd-form-group">
-                                                                <div class="input-group">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text">
-                                                                        <i class="fas fa-envelope-open-text"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <input type="email" placeholder="Email..." class="form-control">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group bmd-form-group">
-                                                                <div class="input-group">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text">
-                                                                        <i class="fas fa-phone-square-alt"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <input type="text" placeholder="Phone..." class="form-control">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group bmd-form-group">
-                                                                <div class="input-group">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text">
-                                                                        <i class="fas fa-map-marker-alt"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <input type="address" placeholder="Address..." class="form-control">
+                                                            <div class="modal-body">
+                                                                <div class="frame">
+                                                                    <div class="center">
+                                                                        <div class="title">
+                                                                            <h1>Drop file to upload</h1>
+                                                                        </div>
+                                                                
+                                                                        <div class="dropzone">
+                                                                            <img src="http://100dayscss.com/codepen/upload.svg" class="upload-icon" />
+                                                                            <input type="file" class="upload-input" />
+                                                                        </div>
+                                                                
+                                                                        <button type="button" class="btn" name="uploadbutton">Upload file</button>
+                                                                
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="text">
+                                            <p class="fw-bold h4 mt-3 text-dark">Khorasani Abrar <i class="fas fa-check-circle shadow" style="color: rgb(71, 120, 255);"></i></p>
+                                            <p class="text-muted ">Full Stack Developer, YEM</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="d-flex justify-content-center align-items-center icon social">
+                                        <a href="https://www.facebook.com/abrar.alkhorasani"><span class="fab fa-facebook-f me-2"></span></a>
+                                        <a href="tel:+967736565337"><span class="fab fa-whatsapp me-2"></span></a>
+                                        <a href="https://github.com/Abrar-Abdulwahed/"><span class="fab fa-github-alt me-2"></span></a>    
                                     </div>
-                                </div>
-                            </div>
-                            <section class="details px-3">
-                                <div class="d-flex align-items-center justify-content-between border-bottom">
-                                    <p class="py-2">Full Name</p>
-                                    <p class="py-2 text-muted">Abrar Abdulwahed Alkhorasani</p>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between border-bottom">
-                                    <p class="py-2">Email</p>
-                                    <p class="py-2 text-muted">abrar.abdulwahed@gmail.com</p>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between border-bottom">
-                                    <p class="py-2">Mobile</p>
-                                    <p class="py-2 text-muted">(+967) 736565237</p>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <p class="py-2">Address</p>
-                                    <p class="py-2 text-muted"> Taiz, YEM</p>
-                                </div>
-                            </section>
+                                </li>
+                                <li>
+                                    <ul class="nav nav-tabs text-start flex-column w-100 bg-transparent" id="myTab" role="tablist">
+                                        <li class="nav-item d-flex align-items-center" role="presentation">
+                                            <i class="fas fa-home"></i>
+                                            <button class="nav-link text-dark active bg-transparent border-0 text" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                                        </li>
+                                        <li class="nav-item d-flex align-items-center" role="presentation">
+                                            <i class="fab fa-accusoft"></i>
+                                            <button class="nav-link text-dark bg-transparent border-0 text" id="skill-tab" data-bs-toggle="tab" data-bs-target="#skill" type="button" role="tab" aria-controls="skill" aria-selected="false">Skills</button>
+                                        </li>
+                                        <li class="nav-item d-flex align-items-center" role="presentation">
+                                            <i class="fab fa-accusoft"></i>
+                                            <button class="nav-link text-dark bg-transparent border-0 text" id="experience-tab" data-bs-toggle="tab" data-bs-target="#experience" type="button" role="tab" aria-controls="experience" aria-selected="false"> Experience</button>
+                                        </li>
+                                        <li class="nav-item d-flex align-items-center" role="presentation">
+                                            <i class="fas fa-phone-square-alt"></i>
+                                            <button class="nav-link text-dark bg-transparent border-0 text" id="qualification-tab" data-bs-toggle="tab" data-bs-target="#qualification" type="button" role="tab" aria-controls="qualification" aria-selected="false"> Qualification</button>
+                                        </li>
+                                        <li class="nav-item d-flex align-items-center" role="presentation">
+                                            <i class="fas fa-phone-square-alt"></i>
+                                            <button class="nav-link text-dark bg-transparent border-0 text" id="course-tab" data-bs-toggle="tab" data-bs-target="#course" type="button" role="tab" aria-controls="course" aria-selected="false"> Courses</button>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="skills-tab">
-                        <div class="card shadow mb-4 personal-information rounded-0">
-                            <div class="card-header d-flex justify-content-between py-3 rounded-0">
-                                <h6 class="m-0 font-weight-bold text-white text-center">Skills</h6>
-                                <span class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#skillsAddModal">
-                                    <i class="fas fa-plus text-white"></i>
-                                </span>
-                                <div class="modal fade" id="skillsAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">          
-                                    <div class="modal-dialog modal-login mt-5" role="document">
-                                        <div class="modal-content">
-                                            <div class="card card-signup card-plain">
-                                                <div class="modal-header">
-                                                    <div class="card-header card-header-primary text-center">
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
-                                                        <h4 class="card-title">Add skill</h4>
-                                                    </div>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <form class="form" method="" action="">
-                                                        <div class="card-body">
-                                                            <div class="form-group bmd-form-group">
-                                                                <div class="input-group">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text">
-                                                                        <i class="fa fa-facebook-square"></i>
-                                                                    </span>
-                                                                </div>
-                                                                <input type="text" class="form-control" placeholder="Skill Name...">
-                                                                </div>
-                                                            </div>
-                                
-                                                            <div class="form-group bmd-form-group">
-                                                                <div class="input-group">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text">
-                                                                        <span class="fab fa-github-alt me-2"></span>
-                                                                    </span>
-                                                                </div>
-                                                                    <input type="text" class="form-control" placeholder="Percentage...">
-                                                                </div>
+                    <div class="col-sm-12 col-md-7">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="card shadow mb-4 personal-information rounded-0">
+                                    <div class="d-flex justify-content-between card-header py-3 rounded-0">
+                                        <h6 class="m-0 font-weight-bold text-white text-center">Personal Information</h6>
+                                        <span class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#personalInformationModal">
+                                            <i class="fas fa-edit text-white"></i>
+                                        </span>
+                                        <div class="modal fade" id="personalInformationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">          
+                                            <div class="modal-dialog modal-login mt-5" role="document">
+                                                <div class="modal-content">
+                                                    <div class="card card-signup card-plain">
+                                                        <div class="modal-header">
+                                                            <div class="card-header card-header-primary text-center">
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+                                                                <h4 class="card-title">Edit Personal Information</h4>
                                                             </div>
                                                         </div>
-                                                    </form>
+                                                        <div class="modal-body">
+                                                            <form class="form" method="" action="">
+                                                                <div class="card-body">
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text">
+                                                                                <i class="fa fa-facebook-square"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                        <input type="text" class="form-control" placeholder="First Name...">
+                                                                        </div>
+                                                                    </div>
+                                        
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text">
+                                                                                <span class="fab fa-github-alt me-2"></span>
+                                                                            </span>
+                                                                        </div>
+                                                                            <input type="text" class="form-control" placeholder="Email...">
+                                                                        </div>
+                                                                    </div>
+                                        
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text">
+                                                                                <span class="fab fa-whatsapp me-2"></span>
+                                                                            </span>
+                                                                        </div>
+                                                                        <input type="password" placeholder="Password..." class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text">
+                                                                                <i class="fas fa-user-alt"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                        <input type="text" placeholder="Full Name.." class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text">
+                                                                                <i class="fas fa-envelope-open-text"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                        <input type="email" placeholder="Email..." class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text">
+                                                                                <i class="fas fa-phone-square-alt"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                        <input type="text" placeholder="Phone..." class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text">
+                                                                                <i class="fas fa-map-marker-alt"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                        <input type="address" placeholder="Address..." class="form-control">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <section class="details px-3">
+                                        <div class="d-flex align-items-center justify-content-between border-bottom">
+                                            <p class="py-2">Full Name</p>
+                                            <p class="py-2 text-muted">Abrar Abdulwahed Alkhorasani</p>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between border-bottom">
+                                            <p class="py-2">Email</p>
+                                            <p class="py-2 text-muted">abrar.abdulwahed@gmail.com</p>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between border-bottom">
+                                            <p class="py-2">Mobile</p>
+                                            <p class="py-2 text-muted">(+967) 736565237</p>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="py-2">Address</p>
+                                            <p class="py-2 text-muted"> Taiz, YEM</p>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="skill" role="tabpanel" aria-labelledby="skills-tab">
+                                <div class="card shadow mb-4 personal-information rounded-0">
+                                    <div class="card-header d-flex justify-content-between py-3 rounded-0">
+                                        <h6 class="m-0 font-weight-bold text-white text-center">Skills</h6>
+                                        <span class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#skillsAddModal">
+                                            <i class="fas fa-plus text-white"></i>
+                                        </span>
+                                        <div class="modal fade" id="skillsAddModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">          
+                                            <div class="modal-dialog modal-login mt-5" role="document">
+                                                <div class="modal-content">
+                                                    <div class="card card-signup card-plain">
+                                                        <div class="modal-header">
+                                                            <div class="card-header card-header-primary text-center">
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+                                                                <h4 class="card-title">Add skill</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form class="form" method="" action="">
+                                                                <div class="card-body">
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text">
+                                                                                <i class="fa fa-facebook-square"></i>
+                                                                            </span>
+                                                                        </div>
+                                                                        <input type="text" class="form-control" placeholder="Skill Name...">
+                                                                        </div>
+                                                                    </div>
+                                        
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <div class="input-group">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text">
+                                                                                <span class="fab fa-github-alt me-2"></span>
+                                                                            </span>
+                                                                        </div>
+                                                                            <input type="text" class="form-control" placeholder="Percentage...">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="skill-item d-flex justify-content-between">
+                                            <h4 class="small font-weight-bold">HTML <span class="float-right">92%</span></h4>
+                                            <div>
+                                                <a role="button" data-bs-toggle="modal" data-bs-target="#editSkillModal">
+                                                    <i class="far fa-edit text-success"></i>
+                                                </a>
+                                                <a role="button" data-bs-toggle="modal" data-bs-target="#deleteSkillModal">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                </a>
+                                            </div>
+                                            <div class="modal fade" id="editSkillModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">          
+                                                <div class="modal-dialog modal-login mt-5" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="card card-signup card-plain">
+                                                            <div class="modal-header">
+                                                                <div class="card-header card-header-primary text-center">
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+                                                                    <h4 class="card-title">Edit Skill</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form>
+                                                                    <div class="mb-3">
+                                                                    <label for="recipient-name" class="col-form-label">Skill Name:</label>
+                                                                    <input type="text" class="form-control" name="sikll-name">
+                                                                    </div>
+                                                                    <div class="mb-3">
+                                                                    <label for="message-text" class="col-form-label">Percentage:</label>
+                                                                    <input type="text" class="form-control" name="progress-percentage">
+                                                                    </div>
+                                                                </form>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">Send message</button>
+                                                                </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal fade" id="deleteSkillModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">          
+                                                <div class="modal-dialog modal-login mt-5" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="card card-signup card-plain">
+                                                            <div class="modal-header">
+                                                                <div class="card-header card-header-primary text-center">
+                                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+                                                                    <h4 class="card-title">Edit Skill</h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <p>Are you sure you want to delete?</p>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                <button type="button" class="btn btn-primary">YES</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress mb-4">
+                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>    
+                                        </div>
+                                        <div class="skill-item d-flex justify-content-between">
+                                            <h4 class="small font-weight-bold">CSS <span class="float-right">80%</span></h4>
+                                            <div>
+                                                <a role="button" data-bs-toggle="modal" data-bs-target="#addSkill">
+                                                    <i class="far fa-edit text-success"></i>
+                                                </a>
+                                                <a role="button" data-bs-toggle="modal" data-bs-target="#delete">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="progress mb-4">
+                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="skill-item d-flex justify-content-between">
+                                            <h4 class="small font-weight-bold">Javascript <span class="float-right">60%</span></h4>
+                                            <div>
+                                                <a role="button" data-bs-toggle="modal" data-bs-target="#addSkill">
+                                                    <i class="far fa-edit text-success"></i>
+                                                </a>
+                                                <a role="button" data-bs-toggle="modal" data-bs-target="#delete">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="progress mb-4">
+                                            <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="skill-item d-flex justify-content-between">
+                                            <h4 class="small font-weight-bold">JQuery <span class="float-right">35%</span></h4>
+                                            <div>
+                                                <a role="button" data-bs-toggle="modal" data-bs-target="#addSkill">
+                                                    <i class="far fa-edit text-success"></i>
+                                                </a>
+                                                <a role="button" data-bs-toggle="modal" data-bs-target="#delete">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="progress mb-4">
+                                            <div class="progress-bar bg-info" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="skill-item d-flex justify-content-between">
+                                            <h4 class="small font-weight-bold">SASS <span class="float-right">30%</span></h4>
+                                            <div>
+                                                <a role="button" data-bs-toggle="modal" data-bs-target="#addSkill">
+                                                    <i class="far fa-edit text-success"></i>
+                                                </a>
+                                                <a role="button" data-bs-toggle="modal" data-bs-target="#delete">
+                                                    <i class="far fa-trash-alt text-danger"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                                <div class="card shadow mb-4 personal-information rounded-0">
+                                    <div class="card-header d-flex justify-content-between py-3 rounded-0">
+                                        <h6 class="m-0 font-weight-bold text-white text-center">Experinecs</h6>
+                                        <span class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#experienceModal">
+                                            <i class="fas fa-plus text-white"></i>
+                                        </span>
+                                        <div class="modal fade" id="experienceModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">          
+                                            <div class="modal-dialog modal-login mt-5" role="document">
+                                                <div class="modal-content">
+                                                    <div class="card card-signup card-plain">
+                                                        <div class="modal-header">
+                                                            <div class="card-header card-header-primary text-center">
+                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
+                                                                <h4 class="card-title">Edit Personal Information</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form class="form" method="" action="">
+                                                                <div class="card-body">
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <p>Category of job</p>
+                                                                        <input type="text" class="form-control" placeholder="Category...">  
+                                                                    </div>
+            
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <p>What is this job name?</p>
+                                                                        <input type="text" class="form-control" placeholder="Job Name...">      
+                                                                    </div>
+                                        
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <p>Job Location</p>
+                                                                        <input type="password" placeholder="Job Location..." class="form-control">
+                                                                        
+                                                                    </div>
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <p>Job Start</p>
+                                                                        <input type="date" placeholder="Job start.." class="form-control">
+                                                                        
+                                                                    </div>
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <p>Job End</p>
+                                                                        <input type="date" placeholder="Job end.." class="form-control">
+                                                                    </div>
+                                                                    <div class="form-group bmd-form-group">
+                                                                        <p>Details</p>
+                                                                        <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body experience">
+                                        <div class="container bcontent">
+                                            <div class="d-flex justify-content-between">
+                                                <h4>Google Assissant</h4>
+                                                <div>
+                                                    <a role="button" data-bs-toggle="modal" data-bs-target="#addSkill">
+                                                        <i class="far fa-edit text-success"></i>
+                                                    </a>
+                                                    <a role="button" data-bs-toggle="modal" data-bs-target="#delete">
+                                                        <i class="far fa-trash-alt text-danger"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="row no-gutters">
+                                                    <div class="col-sm-5">
+                                                        <img class="card-img" src="../imgs/github.png" alt="Suresh Dasari Card" width="70px">
+                                                    </div>
+                                                    <div class="col-sm-7">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">Khorasani Abrar <i class="fas fa-check-circle" style="color: rgb(71, 71, 255);"></i></h5>
+                                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ea..</p>
+                                                            <a href="#" class="btn btn-primary">View Profile</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <div class="skill-item d-flex justify-content-between">
-                                    <h4 class="small font-weight-bold">HTML <span class="float-right">92%</span></h4>
-                                    <div>
-                                        <a role="button" data-bs-toggle="modal" data-bs-target="#editSkillModal">
-                                            <i class="far fa-edit text-success"></i>
-                                        </a>
-                                        <a role="button" data-bs-toggle="modal" data-bs-target="#deleteSkillModal">
-                                            <i class="far fa-trash-alt text-danger"></i>
-                                        </a>
-                                    </div>
-                                    <div class="modal fade" id="editSkillModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">          
-                                        <div class="modal-dialog modal-login mt-5" role="document">
-                                            <div class="modal-content">
-                                                <div class="card card-signup card-plain">
-                                                    <div class="modal-header">
-                                                        <div class="card-header card-header-primary text-center">
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
-                                                            <h4 class="card-title">Edit Skill</h4>
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                          <div class="mb-3">
-                                                            <label for="recipient-name" class="col-form-label">Skill Name:</label>
-                                                            <input type="text" class="form-control" name="sikll-name">
-                                                          </div>
-                                                          <div class="mb-3">
-                                                            <label for="message-text" class="col-form-label">Percentage:</label>
-                                                            <input type="text" class="form-control" name="progress-percentage">
-                                                          </div>
-                                                        </form>
-                                                      </div>
-                                                      <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Send message</button>
-                                                      </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal fade" id="deleteSkillModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">          
-                                        <div class="modal-dialog modal-login mt-5" role="document">
-                                            <div class="modal-content">
-                                                <div class="card card-signup card-plain">
-                                                    <div class="modal-header">
-                                                        <div class="card-header card-header-primary text-center">
-                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-close"></i></button>
-                                                            <h4 class="card-title">Edit Skill</h4>
-                                                        </div>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <p>Are you sure you want to delete?</p>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">YES</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progress mb-4">
-                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>    
-                                </div>
-                                <div class="skill-item d-flex justify-content-between">
-                                    <h4 class="small font-weight-bold">CSS <span class="float-right">80%</span></h4>
-                                    <div>
-                                        <a role="button" data-bs-toggle="modal" data-bs-target="#addSkill">
-                                            <i class="far fa-edit text-success"></i>
-                                        </a>
-                                        <a role="button" data-bs-toggle="modal" data-bs-target="#delete">
-                                            <i class="far fa-trash-alt text-danger"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="progress mb-4">
-                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-item d-flex justify-content-between">
-                                    <h4 class="small font-weight-bold">Javascript <span class="float-right">60%</span></h4>
-                                    <div>
-                                        <a role="button" data-bs-toggle="modal" data-bs-target="#addSkill">
-                                            <i class="far fa-edit text-success"></i>
-                                        </a>
-                                        <a role="button" data-bs-toggle="modal" data-bs-target="#delete">
-                                            <i class="far fa-trash-alt text-danger"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="progress mb-4">
-                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-item d-flex justify-content-between">
-                                    <h4 class="small font-weight-bold">JQuery <span class="float-right">35%</span></h4>
-                                    <div>
-                                        <a role="button" data-bs-toggle="modal" data-bs-target="#addSkill">
-                                            <i class="far fa-edit text-success"></i>
-                                        </a>
-                                        <a role="button" data-bs-toggle="modal" data-bs-target="#delete">
-                                            <i class="far fa-trash-alt text-danger"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="progress mb-4">
-                                    <div class="progress-bar bg-info" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <div class="skill-item d-flex justify-content-between">
-                                    <h4 class="small font-weight-bold">SASS <span class="float-right">30%</span></h4>
-                                    <div>
-                                        <a role="button" data-bs-toggle="modal" data-bs-target="#addSkill">
-                                            <i class="far fa-edit text-success"></i>
-                                        </a>
-                                        <a role="button" data-bs-toggle="modal" data-bs-target="#delete">
-                                            <i class="far fa-trash-alt text-danger"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
+                            <div class="tab-pane fade" id="qualification" role="tabpanel" aria-labelledby="qualification-tab">
+                            
+                            </div>
+                            <div class="tab-pane fade" id="course" role="tabpanel" aria-labelledby="course-tab">
+                            
                             </div>
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="experience-tab">
-                    
-                    </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                    
-                    </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                    
                     </div>
                 </div>
             </div>

@@ -8704,6 +8704,10 @@ textarea.form-control-lg {
     gap: 3rem !important;
   }
 
+  .w-sm-50 {
+    width: 50% !important;
+  }
+
   .justify-content-sm-start {
     justify-content: flex-start !important;
   }

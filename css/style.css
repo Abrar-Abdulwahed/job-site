@@ -17,6 +17,7 @@
     outline: 0 !important;
     font-size: clamp(12px, .80rem + .2vw, 1.5rem);
     font-family: 'Poppins', sans-serif;
+    user-select: none;
 }
 
 a {
@@ -34,6 +35,14 @@ ul {
 
 .h-40 {
     height: 40px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
 }
 
 .btn-primary {
@@ -109,6 +118,184 @@ ul {
     color: var(--primary-clr) !important;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .hero__categories__all {
+        padding: 10px 25px 10px 20px;
+    }
+}
+
+.hero__categories__all {
+    background: var(--primary-clr);
+    position: relative;
+    padding: 10px 25px 10px 40px;
+    cursor: pointer;
+}
+
+.hero__categories__all i {
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.hero__categories__all span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hero__categories__all:after {
+    position: absolute;
+    right: 18px;
+    top: 9px;
+    content: "3";
+    font-family: "ElegantIcons";
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.hero__categories ul {
+    border: 1px solid #ebebeb;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.hero__categories ul li a {
+    font-size: 16px;
+    color: #1c1c1c;
+    line-height: 39px;
+    display: block;
+}
+
+.hero__search {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.hero__search__form {
+    width: 610px;
+    height: 50px;
+    border: 1px solid #ebebeb;
+    position: relative;
+    float: left;
+}
+
+.hero__search__form form .hero__search__categories {
+    width: 30%;
+    float: left;
+    font-size: 16px;
+    color: #1c1c1c;
+    font-weight: 700;
+    padding-left: 18px;
+    padding-top: 11px;
+    position: relative;
+}
+
+.hero__search__form form .hero__search__categories span {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+}
+
+.hero__search__form form .hero__search__categories:after {
+    position: absolute;
+    right: 0;
+    top: 14px;
+    height: 20px;
+    width: 1px;
+    background: #000000;
+    opacity: 0.1;
+    content: "";
+}
+
+.hero__search__form form input {
+    width: 70%;
+    border: none;
+    height: 48px;
+    font-size: 16px;
+    color: #b2b2b2;
+    padding-left: 20px;
+}
+
+.hero__search__phone {
+    float: right;
+}
+
+.hero__search__phone__icon {
+    font-size: 18px;
+    color: var(--primary-clr);
+    height: 50px;
+    width: 50px;
+    background: #f5f5f5;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.hero__search__phone__text {
+    overflow: hidden;
+}
+
+.hero__search__phone__text h5 {
+    color: #1c1c1c;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.hero__search__phone__text span {
+    font-size: 14px;
+    color: #6f6f6f;
+}
+
+.hero__item {
+    height: 431px;
+    display: flex;
+    align-items: center;
+    padding-left: 75px;
+}
+
+.hero__item.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.hero__text span {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: var(--primary-clr);
+}
+
+.hero__text h2 {
+    font-size: 46px;
+    color: #252525;
+    line-height: 52px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.hero__search__form form button {
+    position: absolute;
+    right: 0;
+    top: -1px;
+    height: 50px;
+}
+
+.site-btn {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 13px 30px 12px;
+    background: var(--primary-clr);
+    border: none;
+}
+
 /*=========== Wrapper ===========*/
 
 .ads {
@@ -165,15 +352,9 @@ ul {
     border-left-color: inherit;
 }
 
-.recent-jobs .card-custom-avatar img {
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
-    position: absolute;
-    top: 100px;
-    left: 1.25rem;
-    width: 100px;
-    height: 100px;
-}
+/* .recent-jobs .card-header img {
+    border-radius: ;
+} */
 
 .recent-jobs .card-footer {
     background: inherit;
@@ -345,10 +526,207 @@ ul {
     font-size: 13px;
 }
 
+/*=========== Jobs ==============*/
+.jobs-section {
+    user-select: none;
+}
+
+.jobs-section .single-widgets input {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 16px 10px;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.jobs-section h3 {
+    border-left: 4px solid var(--primary-clr);
+    background-color: #0000000a;
+    padding: 5px 0;
+}
+
+.single-widgets button {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 18px;
+    right: 5px;
+    color: #666;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.jobs-section .single-widgets ul.categories li a {
+    display: inline-block;
+    padding: 9px 0px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 1px solid #dddddd78;
+    width: 100%;
+}
+
+.jobs-section .list-grid-btn a.active {
+    color: var(--primary-clr);
+}
+
+.jobs-section .card .post-head small {
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+.jobs-section .card .other-info a {
+    font-size: .8rem;
+}
+
+.jobs-section .card .card-custom-avatar img {
+    border: 2px solid var(--primary-opacity-clr);
+}
+
+/*=========== About =============*/
+@media (max-width: 991px) {
+    .aboutus-section .about-content {
+        margin-top: 30px;
+    }
+}
+
+.aboutus-section .about-content p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+.aboutus-section .info-box {
+    transition: all .3s ease-in-out;
+}
+
+.aboutus-section .info-box .icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    background: var(--primary-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border-radius: 50%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.aboutus-section .info-box .icon i {
+    font-size: 1.5rem;
+}
+
+.choose-us {
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
 /*=========== Dashboard ============*/
-.dashboard .aside {
-    background-color: rgba(0, 0, 0, 0.03);
-    /* position: fixed; */
+.dashboard .top_navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.03);
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+.dashboard .top_navbar .logo {
+    width: 250px;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0 25px;
+    letter-spacing: 2px;
+    border-right: 1px solid #f5f5f5;
+}
+
+.dashboard .top_navbar .menu {
+    width: calc(100% - 250px);
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .top_navbar .hamburger {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.dashboard .top_navbar .hamburger:hover {
+    color: var(--primary-clr);
+}
+
+.dashboard .sidebar {
+    float: left;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.dashboard .hover_collapse .sidebar {
+    width: 70px;
+}
+
+.dashboard .sidebar .profile {
+    border: 3px solid var(--gray-clr);
+    border-radius: 130px;
+    width: fit-content;
+    margin: auto;
+}
+
+.dashboard .hover_collapse .sidebar .profile button {
+    display: none;
+}
+
+.dashboard .sidebar .profile button {
+    left: 1rem;
+    bottom: .8rem;
+    padding: 7px;
+    border: 5px solid #fff;
+}
+
+.dashboard .hover_collapse .sidebar .text {
+    display: none;
+}
+
+.dashboard .hover_collapse .sidebar ul li .social {
+    flex-direction: column;
+}
+
+.dashboard .sidebar ul li a, .dashboard .sidebar .nav-tabs li {
+    display: block;
+    padding: 16px 25px;
+}
+
+.dashboard .hover_collapse .sidebar ul li .social a {
+    padding: 16px 25px;
+}
+
+.dashboard .sidebar ul li .social a {
+    padding: 0 10px;
+    color: var(--gray-clr);
+
+}
+
+.dashboard .hover_collapse .sidebar ul li a, .dashboard .hover_collapse .sidebar .nav-tabs li {
+    border-bottom: 1px solid #03374e;
+}
+
+.dashboard .sidebar ul li .icon {
+    font-size: 18px;
+    color: white;
+    vertical-align: middle;
+}
+
+.dashboard .sidebar ul li .text {
+    color: #fff;
+    letter-spacing: 2px;
 }
 
 .personal-information .card-header {
@@ -748,4 +1126,111 @@ p {
 .dashboard .modal-dialog a:hover {
     color: #89229b !important;
     text-decoration: none !important;
+}
+
+footer .footer-bg {
+    background: #010b1d;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .footer-padding {
+        padding-top: 170px;
+        padding-bottom: 20px;
+    }
+}
+
+.footer-padding {
+    padding-top: 170px;
+    padding-bottom: 20px;
+}
+
+.footer-bg {
+    background: #010b1d;
+}
+
+.footer-bottom-area .footer-border {
+    border-top: 1px solid #2d3544;
+    padding: 33px 0px 20px;
+}
+
+.footer-bottom-area .footer-copy-right p {
+    color: #888888;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 12px;
+}
+
+footer p {
+    font-family: "Muli", sans-serif;
+    color: #506172;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+footer p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+footer * {
+    color: #fff !important;
+}
+
+footer .f-right {
+    float: right;
+}
+
+footer a, button {
+    color: #fff;
+    outline: medium none;
+}
+
+footer a {
+    color: #635c5c;
+}
+
+footer a, footer .button {
+    -webkit-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    -ms-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+
+.footer-area .footer-form form {
+    position: relative;
+}
+
+.footer-area .footer-form form .form-icon button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 13px 22px;
+    background: #fb246a;
+    line-height: 1;
+    border-radius: 0 3px 3px 0;
+}
+
+.footer-area .footer-form form input {
+    width: 100%;
+    height: 43px;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.footer-bottom-area .footer-social a i {
+    color: #888888;
+    margin-left: 13px;
+    font-size: 14px;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+    transition: .4s;
 }
