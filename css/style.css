@@ -402,6 +402,12 @@ ul {
 }
 
 .nav-tabs .nav-link.active {
+    background-color: rgba(0, 0, 0, 0.11) !important;
+    border-radius: 0 !important;
+    width: 100%;
+}
+
+nav .nav-link.active {
     color: var(--gray-clr);
 }
 
@@ -526,6 +532,11 @@ ul {
     font-size: 13px;
 }
 
+.signup-form .nav-link.active {
+    background-color: #fff !important;
+    border-radius: 50px !important;
+}
+
 /*=========== Job Details ===========*/
 /*=========== Services ===========*/
 .service-section .single-category {
@@ -591,16 +602,16 @@ ul {
     color: var(--primary-clr);
 }
 
-.jobs-section .card .post-head small {
+.card .post-head small {
     font-weight: 300;
     font-size: .8rem;
 }
 
-.jobs-section .card .other-info a {
+.card .other-info a {
     font-size: .8rem;
 }
 
-.jobs-section .card .card-custom-avatar img {
+.card .card-custom-avatar img {
     border: 2px solid var(--primary-opacity-clr);
 }
 
@@ -706,9 +717,10 @@ ul {
 }
 
 .dashboard .sidebar .profile button {
-    left: 1rem;
-    bottom: .8rem;
-    padding: 7px;
+    left: -1rem;
+    bottom: .4rem;
+    height: 40px;
+    width: 40px;
     border: 5px solid #fff;
 }
 
@@ -1099,7 +1111,7 @@ p {
 }
 
 .dashboard .modal-dialog .form-control, .is-focused .form-control {
-    background-image: linear-gradient(0deg, #9c27b0 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #d2d2d2 1px, hsla(0, 0%, 82%, 0) 0) !important;
+    background-image: linear-gradient(0deg, var(--primary-clr) 2px, rgba(156, 39, 176, 0) 0), linear-gradient(0deg, #d2d2d2 1px, hsla(0, 0%, 82%, 0) 0) !important;
 }
 
 .dashboard .modal-dialog .form-control:focus {
@@ -1255,3 +1267,9 @@ footer a, footer .button {
     -o-transition: .4s;
     transition: .4s;
 }
+
+/* @media only screen and(max-width: 1200px) {
+    .dashboard .sidebar .profile img {
+        width: 100px;
+    }
+} */
